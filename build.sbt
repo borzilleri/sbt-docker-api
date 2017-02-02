@@ -1,8 +1,10 @@
 import bintray.Keys._
 
+enablePlugins(GitVersioning)
 
 name := "sbt-docker-api"
-version := "1.0"
+git.baseVersion := "1.0"
+git.useGitDescribe := true
 
 sbtPlugin := true
 scalaVersion := "2.10.6"
